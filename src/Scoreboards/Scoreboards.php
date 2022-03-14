@@ -66,7 +66,7 @@ class Scoreboards extends PluginBase{
 		$pk = new SetScorePacket();
 		$pk->type = $pk::TYPE_CHANGE;
 		$pk->entries[] = $entry;
-		$player->getNetworkSession()->sendDataPacket($pk)
+		$player->getNetworkSession()->sendDataPacket($pk);
 	}
 
 	public function getObjectiveName(Player $player): ?string{
