@@ -36,7 +36,7 @@ class Scoreboards extends PluginBase{
 		$pk->displayName = $displayName;
 		$pk->criteriaName = "dummy";
 		$pk->sortOrder = 0;
-		$player->sendDataPacket($pk);
+		$player->getNetworkSession()->sendDataPacket($pk)
 		$this->scoreboards[$player->getName()] = $objectiveName;
 	}
 
@@ -44,7 +44,7 @@ class Scoreboards extends PluginBase{
 		$objectiveName = $this->getObjectiveName($player);
 		$pk = new RemoveObjectivePacket();
 		$pk->objectiveName = $objectiveName;
-		$player->sendDataPacket($pk);
+		$player->getNetworkSession()->sendDataPacket($pk)
 		unset($this->scoreboards[$player->getName()]);
 	}
 
@@ -67,7 +67,7 @@ class Scoreboards extends PluginBase{
 		$pk = new SetScorePacket();
 		$pk->type = $pk::TYPE_CHANGE;
 		$pk->entries[] = $entry;
-		$player->sendDataPacket($pk);
+		$player->getNetworkSession()->sendDataPacket($pk)
 	}
 
 	public function getObjectiveName(Player $player): ?string{
