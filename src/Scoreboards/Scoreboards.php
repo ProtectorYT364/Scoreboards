@@ -36,15 +36,14 @@ class Scoreboards extends PluginBase{
 		$pk->displayName = $displayName;
 		$pk->criteriaName = "dummy";
 		$pk->sortOrder = 0;
-		$player->getNetworkSession()->sendDataPacket($pk)
+		$player->getNetworkSession()->sendDataPacket($pk);
 		$this->scoreboards[$player->getName()] = $objectiveName;
 	}
-
 	public function remove(Player $player): void{
 		$objectiveName = $this->getObjectiveName($player);
 		$pk = new RemoveObjectivePacket();
 		$pk->objectiveName = $objectiveName;
-		$player->getNetworkSession()->sendDataPacket($pk)
+		$player->getNetworkSession()->sendDataPacket($pk);
 		unset($this->scoreboards[$player->getName()]);
 	}
 
