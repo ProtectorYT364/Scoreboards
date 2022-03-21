@@ -1,10 +1,9 @@
 # Scoreboards
-**Scoreboards is a PocketMine-MP plugin that helps creatings scoreboards in MPE 1.7!**
+**Scoreboards is a PocketMine-MP plugin that helps creatings scoreboards in MPE 1.18!**
 
 ## Installation
- - You can get the compiled `.phar` in releases by clicking [here](https://github.com/TwistedAsylumMC/Scoreboards/releases)
- - Add the `.phar` to your `/plugins` directory & restart your server.
- > Note: This plugin only works on MCPE 1.7 and above, tested on PocketMine-MP 3.3.0
+ - Download Uncompress and use devtool & restart your server.
+ > Note: This plugin only works on MCPE 1.18 and above, tested on PocketMine-MP 4.0.0
  
  ## Usage
  You'll need to import the `Scoreboards\Scoreboards.php` class. This is the main class and probably the only class you'll need for creating Scoreboards.
