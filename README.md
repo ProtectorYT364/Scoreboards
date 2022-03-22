@@ -1,5 +1,5 @@
 # Scoreboards
-**Scoreboards is a PocketMine-MP plugin that helps creatings scoreboards in MPE 1.18!**
+**Scoreboards is a PocketMine-MP plugin that helps creatings scoreboards in MCBE 1.18!**
 
 ## Installation
  - Download Uncompress and use devtool & restart your server.
