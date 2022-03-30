@@ -2,7 +2,7 @@
 **Scoreboards is a PocketMine-MP plugin that helps creatings scoreboards in MCBE 1.18!**
 
 ## Installation
- - Download Uncompress and use devtool & restart your server.
+ - Download Uncompress use devtool & restart your server.
  > Note: This plugin only works on MCBE 1.18 and above, tested on PocketMine-MP 4.0.0
  
  ## Usage
