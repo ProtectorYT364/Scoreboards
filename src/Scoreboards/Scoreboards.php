@@ -9,6 +9,7 @@ use pocketmine\network\mcpe\protocol\SetDisplayObjectivePacket;
 use pocketmine\network\mcpe\protocol\SetScorePacket;
 use pocketmine\network\mcpe\protocol\types\ScorePacketEntry;
 use pocketmine\player\Player;
+use pocketmine\plugin\Plugin;
 use pocketmine\plugin\PluginBase;
 
 class Scoreboards extends PluginBase{
@@ -39,6 +40,7 @@ class Scoreboards extends PluginBase{
 		$player->getNetworkSession()->sendDataPacket($pk);
 		$this->scoreboards[$player->getName()] = $objectiveName;
 	}
+
 	public function remove(Player $player): void{
 		$objectiveName = $this->getObjectiveName($player);
 		$pk = new RemoveObjectivePacket();
